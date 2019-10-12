@@ -12,7 +12,7 @@ class Song < ActiveRecord::Base
     # Hint: you won't want to create an artist record every time this method is called, only if an Drake is *not found*
     if Artist.all.include?("Drake")
       self.artist = 
-    else 
+      else 
       self.artist = Artist.new("Drake")
     end 
   end
